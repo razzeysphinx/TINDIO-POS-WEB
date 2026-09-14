@@ -92,7 +92,7 @@ export const publicNavigation = {
 
   plannedSolutions: [
     "Retail",
-    "Restaurants & CafÃ©s",
+    "Restaurants & Cafés",
     "Grocery / Convenience",
     "Multi-Branch Businesses",
   ],
@@ -120,3 +120,5 @@ export const publicCtaDestinations = {
   // Set this to the real TINDIO application login URL before launch.
   login: null as string | null,
 } as const;
+
+

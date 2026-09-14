@@ -160,7 +160,7 @@ export default function InventoryPage() {
             </p>
 
             <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.06em] sm:text-5xl">
-              Know where your stock went â€” and why.
+              Know where your stock went — and why.
             </h2>
 
             <p className="mx-auto mt-5 max-w-[620px] text-pretty text-lg leading-7 text-emerald-100">
@@ -195,3 +195,5 @@ export default function InventoryPage() {
     </main>
   );
 }
+
+

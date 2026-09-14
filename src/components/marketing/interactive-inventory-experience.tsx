@@ -77,7 +77,7 @@ const steps: Movement[] = [
     mainStock: 42,
     mallStock: 38,
     reference: "Transfer MAIN-ST-DEMO-042",
-    location: "Main â†’ Mall",
+    location: "Main → Mall",
     tone: "transfer",
   },
   {
@@ -180,10 +180,10 @@ export function InteractiveInventoryExperience() {
               </span>
               <div className="min-w-0">
                 <p className="truncate text-xs font-bold text-stone-950">
-                  TINDIO Inventory â€” Activity Demo
+                  TINDIO Inventory — Activity Demo
                 </p>
                 <p className="mt-0.5 text-[10px] text-stone-500">
-                  Coca-Cola 500ml Â· SKU DEMO-CC-500
+                  Coca-Cola 500ml · SKU DEMO-CC-500
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ export function InteractiveInventoryExperience() {
                                 : "bg-stone-200 text-stone-500"
                           }`}
                         >
-                          {complete ? "âœ“" : index + 1}
+                          {complete ? "✓" : index + 1}
                         </span>
                         <span
                           className={`text-[11px] font-bold ${
@@ -363,7 +363,7 @@ export function InteractiveInventoryExperience() {
                       Main
                     </p>
                     <p className="mt-1 text-sm font-extrabold text-sky-950">
-                      âˆ’10 units
+                      −10 units
                     </p>
                   </div>
 
@@ -381,7 +381,7 @@ export function InteractiveInventoryExperience() {
                     className="text-xl text-sky-700"
                     aria-hidden="true"
                   >
-                    â†’
+                    →
                   </motion.span>
 
                   <div className="text-right">
@@ -418,7 +418,7 @@ export function InteractiveInventoryExperience() {
                 </div>
 
                 <span className="font-mono-tindio rounded-lg bg-emerald-50 px-2.5 py-1.5 text-[10px] font-bold text-emerald-800">
-                  MAIN ON HAND Â· {current.mainStock}
+                  MAIN ON HAND · {current.mainStock}
                 </span>
               </div>
 
@@ -438,7 +438,7 @@ export function InteractiveInventoryExperience() {
                         </p>
                       </div>
                       <p className="mt-1 truncate pl-4 text-[10px] text-stone-400">
-                        Opening balance Â· Main Branch
+                        Opening balance · Main Branch
                       </p>
                     </div>
                     <p className="text-sm font-extrabold text-stone-700">
@@ -492,7 +492,7 @@ export function InteractiveInventoryExperience() {
                               </p>
                             </div>
                             <p className="mt-1 truncate pl-4 text-[10px] text-stone-400">
-                              {movement.reference} Â·{" "}
+                              {movement.reference} ·{" "}
                               {movement.location}
                             </p>
                           </div>
@@ -540,3 +540,5 @@ export function InteractiveInventoryExperience() {
     </section>
   );
 }
+
+

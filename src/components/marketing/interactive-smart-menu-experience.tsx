@@ -157,10 +157,10 @@ export function InteractiveSmartMenuExperience() {
               </span>
               <div className="min-w-0">
                 <p className="truncate text-xs font-bold text-white">
-                  TINDIO Catalog â†’ Smart Menu Demo
+                  TINDIO Catalog → Smart Menu Demo
                 </p>
                 <p className="mt-0.5 text-[10px] text-stone-500">
-                  Demo CafÃ© Â· customer menu preview
+                  Demo Café · customer menu preview
                 </p>
               </div>
             </div>
@@ -313,7 +313,7 @@ export function InteractiveSmartMenuExperience() {
                         aria-label={`Decrease ${selected.name} price by 10 pesos`}
                         className="flex h-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-lg font-bold text-stone-300 hover:bg-white/[0.08] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
                       >
-                        âˆ’
+                        −
                       </button>
 
                       <motion.div
@@ -394,7 +394,7 @@ export function InteractiveSmartMenuExperience() {
                         Oat milk
                       </p>
                       <p className="mt-1 text-xs font-extrabold text-white">
-                        {oatMilk ? "+â‚±20" : "Hidden"}
+                        {oatMilk ? "+₱20" : "Hidden"}
                       </p>
                     </button>
                   </div>
@@ -425,7 +425,7 @@ export function InteractiveSmartMenuExperience() {
                             TINDIO SMART MENU
                           </p>
                           <h3 className="mt-1 text-xl font-extrabold tracking-[-0.045em]">
-                            Demo CafÃ©
+                            Demo Café
                           </h3>
                           <p className="mt-1 text-[11px] text-stone-500">
                             Customer menu preview
@@ -634,7 +634,7 @@ export function InteractiveSmartMenuExperience() {
                               </span>
                               {oatMilk ? (
                                 <span className="rounded-md border border-emerald-200 bg-white px-2.5 py-1.5 text-[9px] font-bold text-emerald-900">
-                                  Oat +â‚±20
+                                  Oat +₱20
                                 </span>
                               ) : null}
                             </div>
@@ -665,3 +665,5 @@ export function InteractiveSmartMenuExperience() {
     </section>
   );
 }
+
+

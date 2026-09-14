@@ -185,7 +185,7 @@ export function InteractiveMultiStoreExperience() {
               </span>
               <div className="min-w-0">
                 <p className="truncate text-xs font-bold text-stone-950">
-                  TINDIO Back Office â€” Multi-Store Demo
+                  TINDIO Back Office — Multi-Store Demo
                 </p>
                 <p className="mt-0.5 text-[10px] text-stone-500">
                   Demo organization
@@ -324,7 +324,7 @@ export function InteractiveMultiStoreExperience() {
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-stone-200">
                 <div className="grid grid-cols-[1fr_auto] gap-3 border-b border-stone-200 bg-stone-50 px-4 py-3 text-[9px] font-bold uppercase tracking-[0.1em] text-stone-400">
-                  <span>House Blend 1kg Â· branch stock</span>
+                  <span>House Blend 1kg · branch stock</span>
                   <span>On Hand</span>
                 </div>
 
@@ -408,7 +408,7 @@ export function InteractiveMultiStoreExperience() {
                         House Blend 1kg
                       </p>
                       <p className="mt-1 text-xs text-stone-500">
-                        SKU Â· DEMO-HB-1KG
+                        SKU · DEMO-HB-1KG
                       </p>
                     </div>
 
@@ -510,7 +510,7 @@ export function InteractiveMultiStoreExperience() {
                     className="text-xl text-emerald-700"
                     aria-hidden="true"
                   >
-                    â†’
+                    →
                   </span>
 
                   <div className="text-right">
@@ -569,7 +569,7 @@ export function InteractiveMultiStoreExperience() {
                       className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 p-3.5"
                     >
                       <p className="text-xs font-extrabold text-emerald-900">
-                        âœ“ Transfer complete
+                        ✓ Transfer complete
                       </p>
                       <p className="mt-1 text-[11px] leading-5 text-emerald-800/80">
                         {transferMessage}
@@ -598,3 +598,5 @@ export function InteractiveMultiStoreExperience() {
     </section>
   );
 }
+
+
