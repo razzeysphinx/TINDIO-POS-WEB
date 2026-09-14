@@ -29,7 +29,7 @@ const demos = [
     label: "Offline POS Demo",
     href: "/#offline-experience",
     description:
-      "Walk through Online â†’ Offline â†’ Local Pending â†’ Syncing â†’ Synced.",
+      "Walk through Online → Offline → Local Pending → Syncing → Synced.",
   },
   {
     label: "Multi-Store Demo",
@@ -113,7 +113,7 @@ export default function ResourcesPage() {
                     aria-hidden="true"
                     className="text-emerald-700 transition-transform group-hover:translate-x-0.5"
                   >
-                    â†’
+                    →
                   </span>
                 </div>
               </a>
@@ -144,7 +144,7 @@ export default function ResourcesPage() {
                     aria-hidden="true"
                     className="text-emerald-700 transition-transform group-hover:translate-x-0.5"
                   >
-                    â†’
+                    →
                   </span>
                 </a>
               ))}

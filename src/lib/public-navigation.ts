@@ -81,7 +81,7 @@ export const publicNavigation = {
       href: publicRoutes.solutions.retail,
     },
     {
-      label: "Restaurant & CafÃ©",
+      label: "Restaurant & Café",
       href: publicRoutes.solutions.restaurantCafe,
     },
     {

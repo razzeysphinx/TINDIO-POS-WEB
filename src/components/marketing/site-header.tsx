@@ -178,7 +178,7 @@ export function SiteHeader() {
                 aria-hidden="true"
                 className="text-xs"
               >
-                âŒ„
+                ⌄
               </span>
             </button>
 
@@ -201,7 +201,7 @@ export function SiteHeader() {
                         aria-hidden="true"
                         className="text-emerald-700"
                       >
-                        â†’
+                        →
                       </span>
                     </Link>
                   ))}
@@ -228,7 +228,7 @@ export function SiteHeader() {
                 aria-hidden="true"
                 className="text-xs"
               >
-                âŒ„
+                ⌄
               </span>
             </button>
 
@@ -251,7 +251,7 @@ export function SiteHeader() {
                         aria-hidden="true"
                         className="text-emerald-700"
                       >
-                        â†’
+                        →
                       </span>
                     </Link>
                   ))}
@@ -286,7 +286,7 @@ export function SiteHeader() {
                 aria-hidden="true"
                 className="text-xs"
               >
-                âŒ„
+                ⌄
               </span>
             </button>
 
@@ -309,7 +309,7 @@ export function SiteHeader() {
                         aria-hidden="true"
                         className="text-emerald-700"
                       >
-                        â†’
+                        →
                       </span>
                     </Link>
                   ))}
@@ -381,7 +381,7 @@ export function SiteHeader() {
                 aria-hidden="true"
                 className="text-base text-stone-500"
               >
-                {openMobileSection === "product" ? "âˆ’" : "+"}
+                {openMobileSection === "product" ? "−" : "+"}
               </span>
             </button>
 
@@ -423,7 +423,7 @@ export function SiteHeader() {
                 className="text-base text-stone-500"
               >
                 {openMobileSection === "solutions"
-                  ? "âˆ’"
+                  ? "−"
                   : "+"}
               </span>
             </button>
@@ -473,7 +473,7 @@ export function SiteHeader() {
                 className="text-base text-stone-500"
               >
                 {openMobileSection === "resources"
-                  ? "âˆ’"
+                  ? "−"
                   : "+"}
               </span>
             </button>

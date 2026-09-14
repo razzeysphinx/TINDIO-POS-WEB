@@ -93,7 +93,7 @@ export function SiteFooter() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-stone-200 pt-6 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            Â© {new Date().getFullYear()} TINDIO. All rights reserved.
+            {"\u00A9"} {new Date().getFullYear()} TINDIO. All rights reserved.
           </p>
           <p>Built for the everyday business.</p>
         </div>

@@ -58,7 +58,7 @@ const paths = [
     eyebrow: "Business Fit",
     title: "I want a workflow for my business type.",
     description:
-      "Choose Retail, Restaurant & CafÃ©, Grocery / Convenience, or Multi-Store.",
+      "Choose Retail, Restaurant & Café, Grocery / Convenience, or Multi-Store.",
     href: solutionRoutes.overview,
     action: "Explore Solutions",
   },
@@ -113,7 +113,7 @@ export default function GetStartedPage() {
                     aria-hidden="true"
                     className="transition-transform group-hover:translate-x-0.5"
                   >
-                    â†’
+                    →
                   </span>
                 </span>
               </a>

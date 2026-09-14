@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check:encoding": "node scripts/check-text-encoding.mjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.12",

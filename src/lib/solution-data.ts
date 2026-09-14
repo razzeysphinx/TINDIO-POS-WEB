@@ -116,8 +116,8 @@ export const solutionDefinitions: Record<
   restaurantCafe: {
     key: "restaurantCafe",
     route: solutionRoutes.restaurantCafe,
-    label: "Restaurant & CafÃ©",
-    eyebrow: "TINDIO for Restaurant & CafÃ©",
+    label: "Restaurant & Café",
+    eyebrow: "TINDIO for Restaurant & Café",
     title: "Connect the counter, menu, team, and daily operation.",
     description:
       "Keep the selling workflow close to modifiers, dining-oriented operations, employee access, reporting, and a customer-facing Smart Menu.",

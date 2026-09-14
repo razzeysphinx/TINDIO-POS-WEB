@@ -30,7 +30,7 @@ const businessTypes = {
   },
 
   restaurant: {
-    label: "Restaurant & CafÃ©",
+    label: "Restaurant & Café",
     title: "Connect the order from the counter to the customer menu.",
     description:
       "Keep modifiers, dining-oriented workflows, employee access, reporting, and Smart Menu presentation connected to the same product system.",
@@ -43,7 +43,7 @@ const businessTypes = {
       "Smart Menu",
     ],
     href: solutionRoutes.restaurantCafe,
-    action: "Explore Restaurant & CafÃ©",
+    action: "Explore Restaurant & Café",
   },
 
   grocery: {

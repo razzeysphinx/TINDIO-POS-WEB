@@ -110,7 +110,7 @@ export default function SecurityPage() {
                     aria-hidden="true"
                     className="mt-0.5 text-emerald-700"
                   >
-                    â€”
+                    —
                   </span>
                   {item}
                 </li>

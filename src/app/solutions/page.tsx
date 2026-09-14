@@ -11,7 +11,7 @@ import { solutionList } from "@/lib/solution-data";
 export const metadata: Metadata = {
   title: "TINDIO Solutions | Find the Workflow That Fits",
   description:
-    "Explore TINDIO workflows for retail, restaurants and cafÃ©s, grocery and convenience stores, and multi-store businesses.",
+    "Explore TINDIO workflows for retail, restaurants and cafés, grocery and convenience stores, and multi-store businesses.",
 };
 
 export default function SolutionsPage() {
@@ -70,7 +70,7 @@ export default function SolutionsPage() {
                       aria-hidden="true"
                       className="mt-1 shrink-0 text-xl text-emerald-700 transition-transform group-hover:translate-x-1"
                     >
-                      â†’
+                      →
                     </span>
                   </div>
 
