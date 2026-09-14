@@ -7,6 +7,8 @@ export const publicRoutes = {
   home: "/",
   homeTop: "/#top",
   productOverview: "/#product",
+  businessTypes: "/#business-types",
+  interactiveDemo: "/#interactive-demo",
   getStarted: "/#get-started",
   product: {
     pointOfSale: "/pos",
@@ -33,6 +35,7 @@ export const publicNavigation = {
   ] as const satisfies readonly PublicNavigationLink[],
   resources: [
     { label: "Product Overview", href: publicRoutes.productOverview },
+    { label: "Interactive POS Demo", href: publicRoutes.interactiveDemo },
   ] as const satisfies readonly PublicNavigationLink[],
   plannedSolutions: ["Retail", "Restaurants & Cafés", "Grocery / Convenience", "Multi-Branch Businesses"],
   plannedResources: ["Help Center", "FAQ", "Security", "Contact"],
@@ -42,6 +45,8 @@ export const publicNavigation = {
 export const publicCtaDestinations = {
   getStarted: publicRoutes.getStarted,
   exploreTindio: publicRoutes.productOverview,
+  explorePos: publicRoutes.product.pointOfSale,
+  exploreFeatures: publicRoutes.productOverview,
   // Set this to the real TINDIO application login URL before launch.
   login: null as string | null,
 } as const;

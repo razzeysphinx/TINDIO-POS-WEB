@@ -76,7 +76,7 @@ export function SiteHeader() {
               </div>
             ) : null}
           </div>
-          <span aria-disabled="true" className="rounded-md px-3.5 py-2.5 text-[15px] font-medium text-stone-400" title="Solutions pages are coming soon">Solutions</span>
+          <Link href={publicRoutes.businessTypes} className="rounded-md px-3.5 py-2.5 text-[15px] font-medium text-stone-600 transition-colors hover:text-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">Solutions</Link>
           <span aria-disabled="true" className="rounded-md px-3.5 py-2.5 text-[15px] font-medium text-stone-400" title="Pricing is coming soon">Pricing</span>
           <div className="relative">
             <button ref={resourcesDesktopTriggerRef} type="button" aria-expanded={openDesktopMenu === "resources"} aria-controls="resources-navigation" className="inline-flex items-center gap-1.5 rounded-md px-3.5 py-2.5 text-[15px] font-medium text-stone-600 transition-colors hover:text-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700" onClick={() => setOpenDesktopMenu((menu) => menu === "resources" ? null : "resources")}>Resources <span aria-hidden="true" className="text-xs">⌄</span></button>
@@ -121,7 +121,7 @@ export function SiteHeader() {
               </div>
             ) : null}
           </div>
-          <span aria-disabled="true" className="rounded-lg px-3 py-3 text-sm font-semibold text-stone-400">Solutions</span>
+          <Link href={publicRoutes.businessTypes} onClick={closeMenu} className="rounded-lg px-3 py-3 text-sm font-semibold text-stone-700 hover:bg-stone-100 hover:text-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">Solutions</Link>
           <span aria-disabled="true" className="rounded-lg px-3 py-3 text-sm font-semibold text-stone-400">Pricing</span>
           <div>
             <button ref={resourcesMobileTriggerRef} type="button" aria-expanded={openMobileSection === "resources"} aria-controls="mobile-resources-navigation" className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-sm font-semibold text-stone-700 hover:bg-stone-100 hover:text-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700" onClick={() => setOpenMobileSection((section) => section === "resources" ? null : "resources")}>Resources <span aria-hidden="true" className="text-base text-stone-500">{openMobileSection === "resources" ? "−" : "+"}</span></button>
