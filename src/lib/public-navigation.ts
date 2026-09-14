@@ -1,3 +1,5 @@
+import { solutionRoutes } from "@/lib/solution-data";
+
 export type PublicNavigationLink = {
   label: string;
   href: string;
@@ -13,7 +15,13 @@ export const publicRoutes = {
   offlineExperience: "/#offline-experience",
   multiStoreExperience: "/#multi-store-experience",
   smartMenuExperience: "/#smart-menu-experience",
-  getStarted: "/#get-started",
+
+  getStarted: "/get-started",
+  resources: "/resources",
+  faq: "/faq",
+  security: "/security",
+
+  solutions: solutionRoutes,
 
   product: {
     pointOfSale: "/pos",
@@ -63,62 +71,76 @@ export const publicNavigation = {
     },
   ] as const satisfies readonly PublicNavigationLink[],
 
-  resources: [
+  solutions: [
     {
-      label: "Product Overview",
-      href: publicRoutes.productOverview,
+      label: "All Solutions",
+      href: publicRoutes.solutions.overview,
     },
     {
-      label: "POS Demo",
-      href: publicRoutes.interactiveDemo,
+      label: "Retail",
+      href: publicRoutes.solutions.retail,
     },
     {
-      label: "Inventory Demo",
-      href: publicRoutes.inventoryExperience,
+      label: "Restaurant & CafÃ©",
+      href: publicRoutes.solutions.restaurantCafe,
     },
     {
-      label: "Offline POS Demo",
-      href: publicRoutes.offlineExperience,
+      label: "Grocery / Convenience",
+      href: publicRoutes.solutions.groceryConvenience,
     },
     {
-      label: "Multi-Store Demo",
-      href: publicRoutes.multiStoreExperience,
-    },
-    {
-      label: "Smart Menu Demo",
-      href: publicRoutes.smartMenuExperience,
+      label: "Multi-Store",
+      href: publicRoutes.solutions.multiStore,
     },
   ] as const satisfies readonly PublicNavigationLink[],
 
-  plannedSolutions: [
-    "Retail",
-    "Restaurants & Cafés",
-    "Grocery / Convenience",
-    "Multi-Branch Businesses",
-  ],
+  resources: [
+    {
+      label: "Resource Center",
+      href: publicRoutes.resources,
+    },
+    {
+      label: "Product Demos",
+      href: "/resources#demos",
+    },
+    {
+      label: "FAQ",
+      href: publicRoutes.faq,
+    },
+    {
+      label: "Security & Trust",
+      href: publicRoutes.security,
+    },
+  ] as const satisfies readonly PublicNavigationLink[],
 
-  plannedResources: [
-    "Help Center",
-    "FAQ",
-    "Security",
-    "Contact",
-  ],
+  company: [
+    {
+      label: "Get Started",
+      href: publicRoutes.getStarted,
+    },
+    {
+      label: "Solutions",
+      href: publicRoutes.solutions.overview,
+    },
+  ] as const satisfies readonly PublicNavigationLink[],
 
-  plannedLegal: [
-    "Privacy",
-    "Terms",
-    "Legal / Compliance Information",
-  ],
+  planned: {
+    pricing: "Pricing",
+    contact: "Contact",
+    legal: [
+      "Privacy",
+      "Terms",
+      "Legal / Compliance Information",
+    ],
+  },
 } as const;
 
 export const publicCtaDestinations = {
   getStarted: publicRoutes.getStarted,
-  exploreTindio: publicRoutes.productOverview,
+  exploreTindio: publicRoutes.solutions.overview,
   explorePos: publicRoutes.product.pointOfSale,
   exploreFeatures: publicRoutes.productOverview,
 
   // Set this to the real TINDIO application login URL before launch.
   login: null as string | null,
 } as const;
-
-

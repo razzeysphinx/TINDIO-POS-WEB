@@ -22,7 +22,7 @@ const pillars = [
   {
     number: "01",
     title: "Sell simply.",
-    text: "Give every sale a clear, dependable flow—from the counter to the back office.",
+    text: "Give every sale a clear, dependable flowâ€”from the counter to the back office.",
     icon: CheckoutIcon,
   },
   {
@@ -128,8 +128,8 @@ export default function Home() {
               <p className="eyebrow">Employee Access</p>
               <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Give every employee the right access.</h2>
               <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Owners can manage the whole business, while managers, inventory staff and cashiers only see what they need.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Each role can be limited to the stores and tools they’re authorized to use.</p>
-              <div className="mt-8 flex items-center gap-2.5 border-y border-stone-200 py-4.5 text-xs font-bold uppercase tracking-[0.1em] text-emerald-800"><span>Role</span><span className="text-stone-300">↓</span><span>Permissions</span><span className="text-stone-300">↓</span><span>Store Access</span></div>
+              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Each role can be limited to the stores and tools theyâ€™re authorized to use.</p>
+              <div className="mt-8 flex items-center gap-2.5 border-y border-stone-200 py-4.5 text-xs font-bold uppercase tracking-[0.1em] text-emerald-800"><span>Role</span><span className="text-stone-300">â†“</span><span>Permissions</span><span className="text-stone-300">â†“</span><span>Store Access</span></div>
               <Button href={publicRoutes.product.employeeAccess} className="mt-8" variant="primary">Explore Employee Access <ArrowRightIcon className="h-4 w-4" /></Button>
             </div>
           </div>
@@ -141,10 +141,10 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16 xl:gap-24">
             <div className="max-w-[500px]">
               <p className="eyebrow">Reports</p>
-              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">See what’s happening across your business.</h2>
+              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">See whatâ€™s happening across your business.</h2>
               <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Track the numbers that matter, compare stores, and drill into the details when you need them.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Track sales, shifts, payments, inventory, employees and store performance from one place—then drill into the details when you need them.</p>
-              <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-center gap-4 border-y border-stone-200 py-4"><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">All Stores</p><p className="mt-1 text-xs font-semibold text-stone-700">Consolidated business view</p></div><span className="text-emerald-700">→</span><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">Specific Store</p><p className="mt-1 text-xs font-semibold text-stone-700">Branch-level report</p></div></div>
+              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Track sales, shifts, payments, inventory, employees and store performance from one placeâ€”then drill into the details when you need them.</p>
+              <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-center gap-4 border-y border-stone-200 py-4"><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">All Stores</p><p className="mt-1 text-xs font-semibold text-stone-700">Consolidated business view</p></div><span className="text-emerald-700">â†’</span><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">Specific Store</p><p className="mt-1 text-xs font-semibold text-stone-700">Branch-level report</p></div></div>
               <Button href={publicRoutes.product.reports} className="mt-8" variant="primary">Explore Reports <ArrowRightIcon className="h-4 w-4" /></Button>
             </div>
             <div className="mx-auto w-full max-w-[760px] lg:mx-0 lg:max-w-none">
@@ -174,16 +174,43 @@ export default function Home() {
 
       <InteractiveSmartMenuExperience />
 
-      <section id="get-started" className="relative overflow-hidden bg-emerald-800 py-16 text-white sm:py-20">
+      <section
+        id="get-started"
+        className="relative overflow-hidden bg-emerald-800 py-16 text-white sm:py-20"
+      >
         <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/20 blur-3xl" />
+
         <Container className="relative">
           <div className="mx-auto max-w-[780px] text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-200">TINDIO</p>
-            <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.06em] sm:text-5xl">See the product before you decide where it fits.</h2>
-            <p className="mx-auto mt-5 max-w-[600px] text-pretty text-lg leading-7 text-emerald-100">Start with one store today and grow into multiple branches when you’re ready.</p>
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-200">
+              TINDIO
+            </p>
+            <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.06em] sm:text-5xl">
+              Start with the part of TINDIO that matches your work.
+            </h2>
+            <p className="mx-auto mt-5 max-w-[620px] text-pretty text-lg leading-7 text-emerald-100">
+              Choose a product demo, a business solution, or a deeper product
+              page. Account onboarding will be connected only when the real destination is ready.
+            </p>
+
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Button href={publicCtaDestinations.explorePos} variant="secondary" size="lg" className="border-white bg-white text-emerald-900 hover:bg-emerald-50">Explore TINDIO POS <ArrowRightIcon className="h-4 w-4" /></Button>
-              <Button href={publicCtaDestinations.exploreFeatures} variant="emeraldOutline" size="lg">Explore Features</Button>
+              <Button
+                href={publicCtaDestinations.getStarted}
+                variant="secondary"
+                size="lg"
+                className="border-white bg-white text-emerald-900 hover:bg-emerald-50"
+              >
+                Choose your path
+                <ArrowRightIcon className="h-4 w-4" />
+              </Button>
+
+              <Button
+                href={publicCtaDestinations.exploreFeatures}
+                variant="emeraldOutline"
+                size="lg"
+              >
+                Explore Features
+              </Button>
             </div>
           </div>
         </Container>
@@ -194,6 +221,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
