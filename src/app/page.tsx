@@ -1,18 +1,16 @@
 import { AppFrame } from "@/components/marketing/app-frame";
 import { BusinessSelector } from "@/components/marketing/business-selector";
 import { ConnectedSystem } from "@/components/marketing/connected-system";
-import { InventoryActivityPreview } from "@/components/marketing/inventory-showcase";
 import { EmployeeAccessPreview } from "@/components/marketing/employee-access-showcase";
-import { MultiStorePerformancePreview } from "@/components/marketing/multi-store-showcase";
-import { SyncStatusPreview } from "@/components/marketing/offline-showcase";
 import { ReportsPreview } from "@/components/marketing/reports-showcase";
 import { LoyaltyPreview } from "@/components/marketing/loyalty-showcase";
-import { SmartMenuPreview } from "@/components/marketing/smart-menu-showcase";
 import { SiteFooter } from "@/components/marketing/site-footer";
 import { SiteHeader } from "@/components/marketing/site-header";
 import { InteractivePosDemo } from "@/components/marketing/interactive-pos-demo";
 import { InteractiveOfflineExperience } from "@/components/marketing/interactive-offline-experience";
 import { InteractiveMultiStoreExperience } from "@/components/marketing/interactive-multi-store-experience";
+import { InteractiveInventoryExperience } from "@/components/marketing/interactive-inventory-experience";
+import { InteractiveSmartMenuExperience } from "@/components/marketing/interactive-smart-menu-experience";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { ProductReveal } from "@/components/motion/product-reveal";
@@ -24,7 +22,7 @@ const pillars = [
   {
     number: "01",
     title: "Sell simply.",
-    text: "Give every sale a clear, dependable flow—from the counter to the back office.",
+    text: "Give every sale a clear, dependable flowâ€”from the counter to the back office.",
     icon: CheckoutIcon,
   },
   {
@@ -115,65 +113,10 @@ export default function Home() {
       <InteractivePosDemo />
       <ConnectedSystem />
 
-      <section id="inventory" className="bg-white py-20 sm:py-28 lg:py-32">
-        <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16 xl:gap-24">
-            <div className="max-w-[500px]">
-              <p className="eyebrow">Inventory</p>
-              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Know where every item goes.</h2>
-              <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Follow inventory from receiving to sale, transfer, adjustment, count and return—without digging through complicated reports.</p>
-              <Button href={publicRoutes.product.inventory} className="mt-8" variant="primary">Explore Inventory <ArrowRightIcon className="h-4 w-4" /></Button>
-            </div>
-            <div className="mx-auto w-full max-w-[760px] lg:mx-0 lg:max-w-none">
-              <InventoryActivityPreview />
-            </div>
-          </div>
-        </Container>
-      </section>
+      <InteractiveInventoryExperience />
 
       <InteractiveOfflineExperience />
       <InteractiveMultiStoreExperience />
-
-      <section id="multi-store" className="bg-[#f5f6f2] py-20 sm:py-28 lg:py-32">
-        <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-[1.22fr_0.78fr] lg:gap-16 xl:gap-24">
-            <div className="order-2 mx-auto w-full max-w-[760px] lg:order-1 lg:mx-0 lg:max-w-none">
-              <MultiStorePerformancePreview />
-            </div>
-            <div className="order-1 max-w-[500px] lg:order-2">
-              <p className="eyebrow">Multi-Store</p>
-              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Know which branch is performing best.</h2>
-              <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Compare every branch from one place, then drill into an individual store when you need the details.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Compare sales, transactions, average ticket, inventory alerts and operational performance across every store you’re authorized to manage.</p>
-              <div className="mt-8 border-y border-stone-200 py-5">
-                <div className="grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-5">
-                  <div><p className="text-xs font-bold uppercase tracking-[0.1em] text-emerald-800">All Stores</p><p className="mt-1 text-sm font-semibold text-stone-800">Consolidated business view</p></div>
-                  <span className="hidden text-xl text-emerald-700 sm:block">→</span>
-                  <div><p className="text-xs font-bold uppercase tracking-[0.1em] text-emerald-800">One Store</p><p className="mt-1 text-sm font-semibold text-stone-800">Detailed branch view</p></div>
-                </div>
-              </div>
-              <Button href={publicRoutes.product.multiStore} className="mt-8" variant="primary">Explore Multi-Store <ArrowRightIcon className="h-4 w-4" /></Button>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section id="offline" className="bg-white py-20 sm:py-28 lg:py-32">
-        <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16 xl:gap-24">
-            <div className="max-w-[500px]">
-              <p className="eyebrow">Offline</p>
-              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Built for unreliable connections.</h2>
-              <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">TINDIO keeps transactions safe during connection problems and automatically catches up when you’re back online.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Pending transactions stay visible, so you can see what is waiting to sync rather than searching through reports.</p>
-              <Button href={publicRoutes.product.offlinePos} className="mt-8" variant="primary">Explore Offline POS <ArrowRightIcon className="h-4 w-4" /></Button>
-            </div>
-            <div className="mx-auto w-full max-w-[760px] lg:mx-0 lg:max-w-none">
-              <SyncStatusPreview />
-            </div>
-          </div>
-        </Container>
-      </section>
 
       <section id="employee-access" className="bg-[#f5f6f2] py-20 sm:py-28 lg:py-32">
         <Container>
@@ -185,8 +128,8 @@ export default function Home() {
               <p className="eyebrow">Employee Access</p>
               <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Give every employee the right access.</h2>
               <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Owners can manage the whole business, while managers, inventory staff and cashiers only see what they need.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Each role can be limited to the stores and tools they’re authorized to use.</p>
-              <div className="mt-8 flex items-center gap-2.5 border-y border-stone-200 py-4.5 text-xs font-bold uppercase tracking-[0.1em] text-emerald-800"><span>Role</span><span className="text-stone-300">↓</span><span>Permissions</span><span className="text-stone-300">↓</span><span>Store Access</span></div>
+              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Each role can be limited to the stores and tools theyâ€™re authorized to use.</p>
+              <div className="mt-8 flex items-center gap-2.5 border-y border-stone-200 py-4.5 text-xs font-bold uppercase tracking-[0.1em] text-emerald-800"><span>Role</span><span className="text-stone-300">â†“</span><span>Permissions</span><span className="text-stone-300">â†“</span><span>Store Access</span></div>
               <Button href={publicRoutes.product.employeeAccess} className="mt-8" variant="primary">Explore Employee Access <ArrowRightIcon className="h-4 w-4" /></Button>
             </div>
           </div>
@@ -198,10 +141,10 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16 xl:gap-24">
             <div className="max-w-[500px]">
               <p className="eyebrow">Reports</p>
-              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">See what’s happening across your business.</h2>
+              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">See whatâ€™s happening across your business.</h2>
               <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Track the numbers that matter, compare stores, and drill into the details when you need them.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Track sales, shifts, payments, inventory, employees and store performance from one place—then drill into the details when you need them.</p>
-              <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-center gap-4 border-y border-stone-200 py-4"><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">All Stores</p><p className="mt-1 text-xs font-semibold text-stone-700">Consolidated business view</p></div><span className="text-emerald-700">→</span><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">Specific Store</p><p className="mt-1 text-xs font-semibold text-stone-700">Branch-level report</p></div></div>
+              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Track sales, shifts, payments, inventory, employees and store performance from one placeâ€”then drill into the details when you need them.</p>
+              <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-center gap-4 border-y border-stone-200 py-4"><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">All Stores</p><p className="mt-1 text-xs font-semibold text-stone-700">Consolidated business view</p></div><span className="text-emerald-700">â†’</span><div><p className="text-[10px] font-bold uppercase tracking-[0.1em] text-emerald-800">Specific Store</p><p className="mt-1 text-xs font-semibold text-stone-700">Branch-level report</p></div></div>
               <Button href={publicRoutes.product.reports} className="mt-8" variant="primary">Explore Reports <ArrowRightIcon className="h-4 w-4" /></Button>
             </div>
             <div className="mx-auto w-full max-w-[760px] lg:mx-0 lg:max-w-none">
@@ -229,23 +172,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="solutions" className="bg-white py-20 sm:py-28 lg:py-32">
-        <Container>
-          <div id="smart-menu" className="grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16 xl:gap-24">
-            <div className="max-w-[500px]">
-              <p className="eyebrow">Smart Menu</p>
-              <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Turn your catalog into a customer menu.</h2>
-              <p className="mt-5 max-w-[460px] text-lg leading-7 text-stone-600">Use the same products, prices, categories and modifiers already managed in TINDIO.</p>
-              <p className="mt-3 max-w-[460px] text-sm leading-6 text-stone-500">Use the same products, categories, prices, variants, and modifiers already managed in TINDIO to power a simple customer-facing QR menu.</p>
-              <div className="mt-8 flex items-center gap-3 border-y border-stone-200 py-4 text-xs font-bold uppercase tracking-[0.1em]"><span className="text-emerald-800">TINDIO Catalog</span><span className="text-stone-300">↓</span><span className="text-emerald-800">Smart Menu</span></div>
-              <Button href={publicRoutes.product.smartMenu} className="mt-8" variant="primary">Explore Smart Menu <ArrowRightIcon className="h-4 w-4" /></Button>
-            </div>
-            <div className="mx-auto w-full max-w-[760px] lg:mx-0 lg:max-w-none">
-              <SmartMenuPreview />
-            </div>
-          </div>
-        </Container>
-      </section>
+      <InteractiveSmartMenuExperience />
 
       <section id="get-started" className="relative overflow-hidden bg-emerald-800 py-16 text-white sm:py-20">
         <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/20 blur-3xl" />
@@ -253,7 +180,7 @@ export default function Home() {
           <div className="mx-auto max-w-[780px] text-center">
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-200">TINDIO</p>
             <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.06em] sm:text-5xl">See the product before you decide where it fits.</h2>
-            <p className="mx-auto mt-5 max-w-[600px] text-pretty text-lg leading-7 text-emerald-100">Start with one store today and grow into multiple branches when you’re ready.</p>
+            <p className="mx-auto mt-5 max-w-[600px] text-pretty text-lg leading-7 text-emerald-100">Start with one store today and grow into multiple branches when youâ€™re ready.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button href={publicCtaDestinations.explorePos} variant="secondary" size="lg" className="border-white bg-white text-emerald-900 hover:bg-emerald-50">Explore TINDIO POS <ArrowRightIcon className="h-4 w-4" /></Button>
               <Button href={publicCtaDestinations.exploreFeatures} variant="emeraldOutline" size="lg">Explore Features</Button>
@@ -267,3 +194,4 @@ export default function Home() {
     </main>
   );
 }
+
