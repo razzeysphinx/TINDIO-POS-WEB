@@ -9,6 +9,8 @@ export const publicRoutes = {
   productOverview: "/#product",
   businessTypes: "/#business-types",
   interactiveDemo: "/#interactive-demo",
+  offlineExperience: "/#offline-experience",
+  multiStoreExperience: "/#multi-store-experience",
   getStarted: "/#get-started",
   product: {
     pointOfSale: "/pos",
@@ -36,6 +38,8 @@ export const publicNavigation = {
   resources: [
     { label: "Product Overview", href: publicRoutes.productOverview },
     { label: "Interactive POS Demo", href: publicRoutes.interactiveDemo },
+    { label: "Offline POS Demo", href: publicRoutes.offlineExperience },
+    { label: "Multi-Store Demo", href: publicRoutes.multiStoreExperience },
   ] as const satisfies readonly PublicNavigationLink[],
   plannedSolutions: ["Retail", "Restaurants & Cafés", "Grocery / Convenience", "Multi-Branch Businesses"],
   plannedResources: ["Help Center", "FAQ", "Security", "Contact"],

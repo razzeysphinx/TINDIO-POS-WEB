@@ -10,8 +10,9 @@ import { LoyaltyPreview } from "@/components/marketing/loyalty-showcase";
 import { SmartMenuPreview } from "@/components/marketing/smart-menu-showcase";
 import { SiteFooter } from "@/components/marketing/site-footer";
 import { SiteHeader } from "@/components/marketing/site-header";
-import { LoginAction } from "@/components/marketing/login-action";
 import { InteractivePosDemo } from "@/components/marketing/interactive-pos-demo";
+import { InteractiveOfflineExperience } from "@/components/marketing/interactive-offline-experience";
+import { InteractiveMultiStoreExperience } from "@/components/marketing/interactive-multi-store-experience";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { ProductReveal } from "@/components/motion/product-reveal";
@@ -84,10 +85,6 @@ export default function Home() {
         </Container>
       </section>
 
-      <BusinessSelector />
-      <InteractivePosDemo />
-      <ConnectedSystem />
-
       <section className="border-y border-stone-200 bg-white py-20 sm:py-28">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_2fr] lg:gap-20">
@@ -114,6 +111,10 @@ export default function Home() {
         </Container>
       </section>
 
+      <BusinessSelector />
+      <InteractivePosDemo />
+      <ConnectedSystem />
+
       <section id="inventory" className="bg-white py-20 sm:py-28 lg:py-32">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16 xl:gap-24">
@@ -129,6 +130,9 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      <InteractiveOfflineExperience />
+      <InteractiveMultiStoreExperience />
 
       <section id="multi-store" className="bg-[#f5f6f2] py-20 sm:py-28 lg:py-32">
         <Container>
@@ -251,8 +255,8 @@ export default function Home() {
             <h2 className="mt-4 text-balance text-4xl font-extrabold tracking-[-0.06em] sm:text-5xl">See the product before you decide where it fits.</h2>
             <p className="mx-auto mt-5 max-w-[600px] text-pretty text-lg leading-7 text-emerald-100">Start with one store today and grow into multiple branches when you’re ready.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Button href={publicCtaDestinations.getStarted} variant="secondary" size="lg" className="border-white bg-white text-emerald-900 hover:bg-emerald-50">Get Started <ArrowRightIcon className="h-4 w-4" /></Button>
-              <LoginAction variant="emeraldOutline" size="lg" />
+              <Button href={publicCtaDestinations.explorePos} variant="secondary" size="lg" className="border-white bg-white text-emerald-900 hover:bg-emerald-50">Explore TINDIO POS <ArrowRightIcon className="h-4 w-4" /></Button>
+              <Button href={publicCtaDestinations.exploreFeatures} variant="emeraldOutline" size="lg">Explore Features</Button>
             </div>
           </div>
         </Container>
