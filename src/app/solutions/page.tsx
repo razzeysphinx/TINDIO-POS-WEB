@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { SiteFooter } from "@/components/marketing/site-footer";
 import { SiteHeader } from "@/components/marketing/site-header";
@@ -49,7 +50,7 @@ export default function SolutionsPage() {
                 key={solution.key}
                 delay={index * 0.04}
               >
-                <a
+                <Link
                   href={solution.route}
                   className="group block h-full rounded-[22px] border border-stone-200 bg-[#fbfbf8] p-6 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-px hover:border-emerald-200 hover:shadow-[0_18px_50px_rgba(28,25,23,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 sm:p-8"
                 >
@@ -84,7 +85,7 @@ export default function SolutionsPage() {
                       </span>
                     ))}
                   </div>
-                </a>
+                </Link>
               </Reveal>
             ))}
           </div>

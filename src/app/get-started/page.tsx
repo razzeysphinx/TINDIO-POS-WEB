@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { LoginAction } from "@/components/marketing/login-action";
 import { SiteFooter } from "@/components/marketing/site-footer";
@@ -93,7 +94,7 @@ export default function GetStartedPage() {
         <Container>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {paths.map((path) => (
-              <a
+              <Link
                 key={path.href}
                 href={path.href}
                 className="group flex h-full flex-col rounded-[22px] border border-stone-200 bg-[#fbfbf8] p-6 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-px hover:border-emerald-200 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
@@ -116,7 +117,7 @@ export default function GetStartedPage() {
                     →
                   </span>
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
         </Container>

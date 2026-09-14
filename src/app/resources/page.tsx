@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { SiteFooter } from "@/components/marketing/site-footer";
 import { SiteHeader } from "@/components/marketing/site-header";
@@ -95,7 +96,7 @@ export default function ResourcesPage() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {demos.map((demo) => (
-              <a
+              <Link
                 key={demo.href}
                 href={demo.href}
                 className="group rounded-2xl border border-stone-200 bg-[#fbfbf8] p-5 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-px hover:border-emerald-200 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
@@ -116,7 +117,7 @@ export default function ResourcesPage() {
                     →
                   </span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </Container>
@@ -134,7 +135,7 @@ export default function ResourcesPage() {
 
             <div className="grid gap-3 sm:grid-cols-2">
               {guides.map((guide) => (
-                <a
+                <Link
                   key={guide.href}
                   href={guide.href}
                   className="group flex items-center justify-between rounded-xl border border-stone-200 bg-white px-4 py-4 text-sm font-bold text-stone-800 transition-colors hover:border-emerald-200 hover:text-emerald-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
@@ -146,7 +147,7 @@ export default function ResourcesPage() {
                   >
                     →
                   </span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -156,7 +157,7 @@ export default function ResourcesPage() {
       <section className="bg-white py-20 sm:py-24">
         <Container>
           <div className="grid gap-4 md:grid-cols-2">
-            <a
+            <Link
               href="/faq"
               className="rounded-[22px] border border-stone-200 bg-[#fbfbf8] p-6 transition-colors hover:border-emerald-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 sm:p-8"
             >
@@ -168,9 +169,9 @@ export default function ResourcesPage() {
                 Review what the demos mean, what is not being claimed, and what
                 public product paths exist today.
               </p>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/security"
               className="rounded-[22px] border border-stone-200 bg-[#fbfbf8] p-6 transition-colors hover:border-emerald-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 sm:p-8"
             >
@@ -182,7 +183,7 @@ export default function ResourcesPage() {
                 See the public access-control principles TINDIO communicates and
                 the claims this website intentionally does not make.
               </p>
-            </a>
+            </Link>
           </div>
 
           <div className="mt-10 text-center">

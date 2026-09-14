@@ -1,5 +1,14 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {
+  Metadata,
+  Viewport,
+} from "next";
+import {
+  Geist,
+  Geist_Mono,
+} from "next/font/google";
+
+import { SiteStructuredData } from "@/components/marketing/site-structured-data";
+import { siteConfig } from "@/lib/site-config";
 
 import "./globals.css";
 
@@ -14,9 +23,59 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TINDIO | Sell simple. Grow smarter.",
-  description:
-    "TINDIO brings sales, inventory, employees and stores together in one place.",
+  metadataBase: siteConfig.siteUrl
+    ? new URL(siteConfig.siteUrl)
+    : undefined,
+
+  title: siteConfig.title,
+
+  description: siteConfig.description,
+
+  applicationName: siteConfig.name,
+
+  authors: [
+    {
+      name: "TINDIO",
+    },
+  ],
+
+  creator: "TINDIO",
+
+  publisher: "TINDIO",
+
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+
+  openGraph: {
+    type: "website",
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    ...(siteConfig.siteUrl
+      ? {
+          url: siteConfig.siteUrl,
+        }
+      : {}),
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#047857",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -26,7 +85,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}`}
+      >
+        <SiteStructuredData />
         {children}
       </body>
     </html>

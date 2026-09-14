@@ -9,7 +9,11 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "check:encoding": "node scripts/check-text-encoding.mjs"
+    "check:encoding": "node scripts/check-text-encoding.mjs",
+    "check:routes": "node scripts/check-route-files.mjs",
+    "check:site-url": "node scripts/check-site-url.mjs",
+    "check:release": "pnpm check:encoding && pnpm check:routes && pnpm typecheck && pnpm lint && pnpm build",
+    "check:launch": "pnpm check:site-url && pnpm check:release"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.12",

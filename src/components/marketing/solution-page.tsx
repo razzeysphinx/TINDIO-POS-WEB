@@ -1,4 +1,5 @@
 import { SiteFooter } from "@/components/marketing/site-footer";
+import Link from "next/link";
 import { SiteHeader } from "@/components/marketing/site-header";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
@@ -111,7 +112,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
 
             <div className="grid gap-3 sm:grid-cols-2">
               {solution.productLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="group rounded-2xl border border-stone-200 bg-white p-5 shadow-sm transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-px hover:border-emerald-200 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
@@ -132,7 +133,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
                       →
                     </span>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -150,7 +151,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
 
           <div className="mx-auto mt-10 grid max-w-[980px] gap-4 sm:grid-cols-2">
             {solution.demoLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="group rounded-2xl border border-stone-200 bg-[#fbfbf8] p-6 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-px hover:border-emerald-200 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
@@ -173,7 +174,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
                     →
                   </span>
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
         </Container>

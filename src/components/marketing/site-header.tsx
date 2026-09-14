@@ -147,6 +147,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-[#fbfbf8]/90 backdrop-blur-lg">
+      <a
+        href="#main-content"
+        className="fixed left-4 top-3 z-[100] -translate-y-20 rounded-lg bg-stone-950 px-4 py-2 text-sm font-bold text-white shadow-lg transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+      >
+        Skip to content
+      </a>
       <div className="mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           href={publicRoutes.homeTop}
@@ -508,6 +514,11 @@ export function SiteHeader() {
           </div>
         </nav>
       </div>
+      <span
+        id="main-content"
+        tabIndex={-1}
+        className="sr-only"
+      />
     </header>
   );
 }
